@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Basic HTML File</title>
+    <title>Bootstrap Aufgabe</title>
 	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -14,54 +14,69 @@
 				<table class="table">
 				<thead>
 				  <tr>
-					<th>ID</th>
-					<th>TODO</th>
-					<th>Deadline</th>
-					<th>Prozent</th>
-					<th></th>
-					<th></th>
+					<th class="col-md-1">Id</th>
+					<th class="col-md-2">TODO</th>
+					<th class="col-md-1" >Deadline</th>
+					<th class="col-md-1">Prozent</th>
+					<th class="col-md-1"></th>
+					<th class="col-md-1"></th>
 				  </tr>
 				</thead>
 				<tbody>
 				  <tr>
-					<td>John</td>
-					<td>Doe</td>
-					<td>john@example.com</td>
+					<td>1</td>
+					<td>mach Soziale Netwerke Ha</td>
+					<td> <div class="form-group row">
+            <div class="col-5">
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+               </div>
+          </td>
 					<td>John</td>
 					<td><a href="#" class="btn btn-info btn-md">
-          <span class="glyphicon glyphicon-pencil"></span>  
+          <span class="glyphicon glyphicon-pencil"></span>
         </a></td>
 		<td><a href="#" class="btn btn-info btn-md">
-          <span class="glyphicon glyphicon-trash"></span>  
+          <span class="glyphicon glyphicon-trash"></span>
         </a></td>
 				  </tr>
 				  <tr>
-					<td  class="col-md-1">Mary</td>
-					<td  class="col-md-5">Moe</td>
-					<td class="col-md-2">mary@example.com</td>
-					<td class="col-md-1">John</td>
-					<td class="col-md-1"><a href="#" class="btn btn-info btn-md">
-          <span class="glyphicon glyphicon-pencil"></span>  
-        </a></td>
-		<td class="col-md-1"><a href="#" class="btn btn-info btn-md">
-          <span class="glyphicon glyphicon-trash"></span>  
-        </a></td>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td> <div class="form-group row">
+            <div class="col-5">
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+               </div>
+          </td>
+					<td>John</td>
+					<td ><a href="#" class="btn btn-info btn-md">
+          <span class="glyphicon glyphicon-pencil"></span>
+              </a></td>
+		      <td ><a href="#" class="btn btn-info btn-md">
+            <span class="glyphicon glyphicon-trash"></span>
+              </a></td>
 				  </tr>
 				  <tr>
 					<td>July</td>
 					<td>Dooley</td>
-					<td>july@example.com</td>
+					<td> <div class="form-group row">
+            <div class="col-5">
+            <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+               </div>
+          </td>
 					<td>John</td>
 					<td><a href="#" class="btn btn-info btn-md">
-          <span class="glyphicon glyphicon-pencil"></span>  
+          <span class="glyphicon glyphicon-pencil"></span>
         </a></td>
 		<td><a href="#" class="btn btn-info btn-md">
-          <span class="glyphicon glyphicon-trash"></span>  
+          <span class="glyphicon glyphicon-trash"></span>
         </a></td>
 				  </tr>
 				</tbody>
 			  </table>
 		</div>
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> TODO
+    </button>
 	</div>
 	<script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
