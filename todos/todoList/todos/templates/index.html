@@ -1,0 +1,50 @@
+{% include 'partials/header.html' %}
+  <body>
+    <body>
+    <div class="container">
+    <div class="row text-center">
+          <table class="table" border="2">
+
+            <tr class="bg-info">
+            <th class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">TODO</th>
+            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">Deadline</th>
+            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">Prozent</th>
+            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">Bearbeiten</th>
+            <th class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">Löschen</th>
+            </tr>
+
+            {% for todo in todos %}
+              <tr>
+                <td>{{todo.title}}</td>
+                <td>{{todo.deadline}}</td>
+                <td>{{todo.procent}}%</td>
+                <td>
+                  <a href="TodoEdit.html" class="btn btn-warning btn-md">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </a>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-danger btn-md">
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </a>
+                </td>
+              </tr>
+
+            {% endfor %}
+
+          </table>
+    </div>
+
+    <div class="row text-center">
+
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-success"><a href="TodoAdd.html">  TODO anlegen </a> </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-info"><a href="Impressum.html"> Impressum </a> </div>
+
+    </div>
+
+    </div>
+
+
+{% include 'partials/footer.html' %}
+
