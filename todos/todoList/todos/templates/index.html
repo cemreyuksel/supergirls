@@ -19,7 +19,7 @@
                 <td>{{todo.deadline}}</td>
                 <td>{{todo.procent}}%</td>
                 <td>
-                  <a href="TodoEdit.html" class="btn btn-warning btn-md">
+                  <a href="{% url 'edit' todo.id %}" class="btn btn-warning btn-md">
                     <span class="glyphicon glyphicon-pencil"></span>
                   </a>
                 </td>
@@ -38,8 +38,8 @@
     <div class="row text-center">
 
 
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-success"><a href="TodoAdd.html">  TODO anlegen </a> </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-info"><a href="Impressum.html"> Impressum </a> </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-success"><a href="/todos/add"">  TODO anlegen </a> </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 bg-info"><a href="/todos/impressum"> Impressum </a> </div>
 
     </div>
 

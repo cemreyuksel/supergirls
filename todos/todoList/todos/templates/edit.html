@@ -1,10 +1,10 @@
 {% include 'partials/header.html' %}
 <div class = "container" >
   <h1 class="col-lg-12 col-md-12 col-xs-12"> Um ein TODO anzulegen,füllen Sie das Formular aus und klicken Sie auf dem Button. </h1>
-<form action="{% url 'add' %}" method="post">
-  {% include 'partials/form.html' %}
-  <button type="submit" class="col-lg-12 col-md-12 col-xs-12 btn btn-success btn-lg">
-        <span class="glyphicon glyphicon-star"  style= "color:white;"></span> ADD
+<form action="{% url 'edit' todo.id %}" method="post">
+    {% include 'partials/form.html' %}
+    <button type="submit" class="col-lg-12 col-md-12 col-xs-12 btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-star"  style= "color:white;"></span> EDIT
       </button>
 </form>
 </div>

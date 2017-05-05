@@ -1,0 +1,17 @@
+<div class="form-group">
+{% csrf_token %}
+  <label for="title">TODO</label><br />
+  <input type="text" name="title" class="form-control" id="title" maxlength="160" value="{{todo.title}}" />
+  </div>
+  <br>
+  <div class="form-group">
+  <label for="deadline">Deadline</label><br />
+  <input type="date" class="form-control" name="deadline" id="deadline" value="{{todo.deadline|date:"Y-m-d"}}">
+  </div>
+  <br>
+  <div class="form-group">
+  <label for="procent">Prozent</label>
+  <input type="number" class="form-control" min="0" max="100" name="procent" id="procent" value="{{todo.procent}}" >
+  </div>
+  <br>
+  <br><br>

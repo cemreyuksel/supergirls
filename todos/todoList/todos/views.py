@@ -13,15 +13,6 @@ def index(request):
     'todos': todos
   }
   return render(request, 'index.html', context)
-# Create your views here.
-
-def details(request,id):
-  todo = Todo.objects.get(id=id)
-
-  context = {
-    'todo': todo
-  }
-  return render(request, 'details.html', context)
 
 def add(request):
     if(request.method == 'POST'):
@@ -35,3 +26,16 @@ def add(request):
         return redirect('/todos')
     else:
         return render(request, 'add.html')
+
+def edit(request, id):
+  todo = Todo.objects.get(id=id)
+
+  context = {
+    'todo': todo
+  }
+  return render(request, 'edit.html', context)
+
+def impressum(request):
+  return render(request, 'impressum.html')
+
+
