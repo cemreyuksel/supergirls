@@ -7,7 +7,6 @@ from django.db import models
 # Create your models here.
 class Todo(models.Model):
   title = models.CharField(max_length=160)
-  text = models.TextField()
   deadline = models.DateTimeField(blank=True)
   procent = models.IntegerField()
   created_at = models.DateTimeField(default=datetime.now,blank=True)

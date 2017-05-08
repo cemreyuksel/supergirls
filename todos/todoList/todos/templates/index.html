@@ -16,7 +16,7 @@
             {% for todo in todos %}
               <tr>
                 <td>{{todo.title}}</td>
-                <td>{{todo.deadline}}</td>
+                <td>{{todo.deadline|date:"d M Y"}}</td>
                 <td>{{todo.procent}}%</td>
                 <td>
                   <a href="{% url 'edit' todo.id %}" class="btn btn-warning btn-md">
@@ -24,7 +24,7 @@
                   </a>
                 </td>
                 <td>
-                  <a href="#" class="btn btn-danger btn-md">
+                  <a href="{% url 'delete' todo.id %}"  class="btn btn-danger btn-md">
                     <span class="glyphicon glyphicon-trash"></span>
                   </a>
                 </td>
